@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love Calc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+
+        <nav class="navbar  navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">LoveBar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="About.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="quotes.html">Quotes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="relation.html">Know your relation</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="Container">
+            <div id="relation" class="BoxRelation">
+                <h2 style="margin-bottom: 30px;" id="kyr"> Know how you are related to each other </h2>
+                <p class="Question"> <img src="https://img.freepik.com/free-vector/couples-cook-kitchen-cartoon-hand-draw-illustration_56104-317.jpg?w=740&amp;t=st=1673170410~exp=1673171010~hmac=e16390d5a3f8c1b9443de99179aaf33d879137f1374d2d32ae3a824552c0766e" width="70"
+                        height="70"> Do you know his/her favorite food? <input value=1 id="11" name="yes_no1" type="radio" style="margin-left: 30px;">Yes <input value=0 id="12" name="yes_no1" type="radio" style="margin-left: 30px;">No</p>
+                <p class="Question"><img src="https://img.freepik.com/premium-vector/wedding-couple-cartoon-character-illustration_56104-398.jpg?w=740" width="70" height="70"> Do you know his/her favorite Colour? <input value=1 id="21" name="yes_no2" type="radio" style="margin-left: 30px;">Yes
+                    <input value=0 id="22" name="yes_no2" type="radio" style="margin-left: 30px;">No</p>
+                <p class="Question"><img src="https://img.freepik.com/free-vector/couples-cook-kitchen-cartoon-hand-draw-illustration_56104-317.jpg?w=740&amp;t=st=1673170410~exp=1673171010~hmac=e16390d5a3f8c1b9443de99179aaf33d879137f1374d2d32ae3a824552c0766e" width="70"
+                        height="70"> Do you know his/her favorite Place? <input value=1 id="31" name="yes_no3" type="radio" style="margin-left: 30px;">Yes <input value=0 id="32" name="yes_no3" type="radio" style="margin-left: 30px;">No</p>
+                <p class="Question"><img src="https://img.freepik.com/premium-vector/wedding-couple-cartoon-character-illustration_56104-398.jpg?w=740" width="70" height="70"> Do you know his/her favorite movie? <input value=1 id="41" name="yes_no4" type="radio" style="margin-left: 30px;">Yes
+                    <input value=0 id="42" name="yes_no4" type="radio" style="margin-left: 30px;">No</p>
+                <p class="Question"><img src="https://img.freepik.com/premium-vector/couple-celebrate-birthday-happy-with-cake-happy-valentine-cartoon-character-illustration_56104-363.jpg?w=740" width="70" height="70"> Do you know his/her favorite Birthday? <input value=1
+                        id="51" name="yes_no5" type="radio" style="margin-left: 30px;">Yes <input value=0 id="52" name="yes_no5" type="radio" style="margin-left: 30px;">No</p>
+            </div>
+        </div>
+        <button onclick="fn1()" type="submit" id="submit1">Calculate 💌</button>
+        <p id="total_marks"> You are :<span id="sum_relation"></span></p>
+        <script src="relation.js"></script>
+
+
+</body>
+
+</html>
